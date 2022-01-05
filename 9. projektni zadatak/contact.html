@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="hr">
+	<head>
+		<title>Kontakt</title>
+		<link rel="stylesheet" href="style.css">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="description" content="Ovo je projektni zadatak za Web aplikacije">
+		<meta name="keywords" content="Ključne riječi o M4">
+		<meta name="author" content="Aldo Grabić">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="images/x-icon.ico"> 
+		
+	</head>
+<body>
+	<header>
+		<div class="hero-image"></div>
+		<nav>
+			<ul>
+			  <li><a href="index.html">Početna stranica</a></li>
+			  <li><a href="news.html">Novosti</a></li>
+			  <li><a href="contact.html">Kontakt</a></li>
+			  <li><a href="about.html">O nama</a></li>
+			  <li><a href="gallery.html">Galerija</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="kontakt">
+			<h1>Pronađite poslovnicu!</h1>
+			<br>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11126.863346766839!2d16.0073296!3d45.7969204!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x81aa59d390e46c7b!2sBMW%20Tomi%C4%87%20%26%20Co.%20Zagreb%20-%20ovla%C5%A1teni%20servis%20i%20prodaja!5e0!3m2!1shr!2shr!4v1639986977169!5m2!1shr!2shr" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			<hr>
+			<h1>Molimo ispunite Vaše osobne podatke!</h1>
+			<br>
+			<form action="http://work2.eburza.hr/pwa/responzive-page/send-contact.php" id="contact_form" name="contact_form" method="post">
+				<div class="form-group">
+					<label for="productionyear">Koju godinu modela BMW M4 biste željeli?</label>
+					<select id="productionyear" name="productionyear" class="form-control">
+					<option value="">Odaberite jedno</option>
+					<option value="2014">2014.</option>
+					<option value="2014">2015.</option>
+					<option value="2014">2016.</option>
+					<option value="2014">2017.</option>
+					<option value="2014">2018.</option>
+					<option value="2014">2019.</option>
+					<option value="2014">2020.</option>
+					<option value="2014">2021.</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="firstname">Ime *</label>
+					<input type="text" id="firstname" name="firstname" placeholder="Vaše ime .." class="form-control" required>
+				</div>
+
+				<div class="form-group">
+					<label for="lastname">Prezime *</label>
+					<input type="text" id="lastname" name="lastname" placeholder="Vaše prezime .." class="form-control" required>
+				</div>
+
+				<div class="form-group">	
+					<label for="email">Vaš email *</label>
+					<input type="email" id="email" name="email" placeholder="Vaš email .." class="form-control" required>
+				</div>
+
+				<div class="form-group">
+					<label for="country">Država</label>
+					<select id="country" name="country" class="form-control">
+					<option value="">Odaberite jedno</option>
+					<option value="Croatia" selected>Hrvatska</option>
+					<option value="Bosnia and Herzegovina">Bosna i Hercegovina</option>
+					<option value="Serbia">Srbija</option>
+					<option value="Slovenia">Slovenija</option>
+					<option value="Macedonia">Makedonija</option>
+					<option value="Bulgaria">Bugarska</option>
+					<option value="Montenegro">Crna Gora</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="message">Poruka</label>
+					<textarea id="message" name="message" placeholder="Napiši nešto .." class="form-control"></textarea>
+				</div>
+
+				<div class="form-group">
+					<input type="submit" class="btn btn-default" value="Pošalji"> 
+					<input type="reset" class="btn btn-default" value="Ponovi">
+				</div>
+			</form>
+		</div>
+	</main>
+
+	<footer>	
+		<p> Copyright &copy; 2021 Aldo Grabić <a href="https://github.com/aldograbic?tab=repositories"><img id="github-mark" src="images/GitHub-Mark-32px.png" title="Github" alt="Github"> </a></p>
+	</footer>
+</body>
+</html>
